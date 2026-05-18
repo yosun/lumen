@@ -272,6 +272,12 @@ final class GemmaMultimodalEngine: MultimodalInferenceEngine {
             systemMessage: Message(trimmed, role: .system),
             samplerConfig: samplerConfig
         )
+        // LiteRT-LM only allows one live session per engine. Release the
+        // current conversation BEFORE asking for a new one — relying on
+        // assignment-order ARC release would let the new createConversation
+        // call run while the old session handle is still alive, which the
+        // engine rejects with FAILED_PRECONDITION.
+        self.conversation = nil
         let newConversation = try await engine.createConversation(with: conversationConfig)
         self.conversation = newConversation
         self.activeSystemInstruction = trimmed
