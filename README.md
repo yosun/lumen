@@ -1,6 +1,6 @@
-# Napkinmatic Offline
+# Lumen
 
-Napkinmatic Offline is a native iPhone prototype for private visual intelligence powered by an on-device Gemma 4 LiteRT-LM model. The first vertical slice is an Ask Image flow: capture or import an image, select a natural-language task prompt, optionally add a custom question, and run the multimodal model locally.
+Lumen (formerly Napkinmatic Offline) is a native iPhone prototype for private visual intelligence powered by an on-device Gemma 4 LiteRT-LM model. The first vertical slice is an Ask Image flow: capture or import an image, select a natural-language task prompt, optionally add a custom question, and run the multimodal model locally.
 
 The product framing is intentionally local-first: point the phone at signs, menus, appliances, notes, forms, packaging, or other real-world objects and get useful prose without uploading the image.
 
@@ -48,14 +48,14 @@ For a bundled hackathon/demo build:
 1. Download `gemma-4-E2B-it.litertlm` from `litert-community/gemma-4-E2B-it-litert-lm`.
 2. Place it at:
 
-   `NapkinmaticOffline/Resources/ModelPlaceholder/gemma-4-E2B-it.litertlm`
+   `ModelPlaceholder/gemma-4-E2B-it.litertlm`
 
 3. Regenerate the project with `xcodegen generate`.
 4. Confirm the file appears in the app target's Copy Bundle Resources phase.
 
 For a future production download flow, switch `ModelConfiguration.storageMode` to `.downloadedLocalAsset`. The app will look for:
 
-`Application Support/NapkinmaticOffline/Models/gemma-4-E2B-it.litertlm`
+`Models/gemma-4-E2B-it.litertlm`
 
 No cloud inference fallback is implemented.
 
