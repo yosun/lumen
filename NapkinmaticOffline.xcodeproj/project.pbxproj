@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		017FF952A8FE58153A8C176B /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829DE991ACA5457C92D037B8 /* AppRootView.swift */; };
+		0BA4CAFD949370A7FDA8749D /* LiteRTLM in Frameworks */ = {isa = PBXBuildFile; productRef = AB015AF5F5B08C4EDA547CBF /* LiteRTLM */; };
+		0E8D32F4E620DA143E3A2E47 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CA12BB5A759341E078B21 /* HomeView.swift */; };
+		14B1D72BDAE317498B23CF9D /* LiteRTLM in Frameworks */ = {isa = PBXBuildFile; productRef = C9EC8614E357EC0720171719 /* LiteRTLM */; };
+		28429E4895F1968F6DC499F0 /* ImagePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E32725D734C03557182F92 /* ImagePreprocessor.swift */; };
+		35A942277A383155559ED933 /* LiteRTLMIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7017AE0C78010D0FEE2186DE /* LiteRTLMIntegrationTests.swift */; };
+		50AA9F4D8D5CCDC0DB4C7914 /* PromptChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E4F22E5C18B902B70D0377 /* PromptChip.swift */; };
+		5A088AFCCE980E09C1CF8035 /* GemmaMultimodalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2940C03B8D36EB8913674101 /* GemmaMultimodalEngine.swift */; };
+		5C8E981923991E177FEDDD69 /* PromptTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8A96CFBA1F7B9DFFAAF614 /* PromptTemplates.swift */; };
+		7AE89B0B550E6668C0524437 /* CameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80AA4DBD6E3DCD9B663BDD4 /* CameraCaptureView.swift */; };
+		87F56FE271FE722781C37470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE94F41CF6C33356D360CCB /* Assets.xcassets */; };
+		8C9F99ABA83F2F999A47FF82 /* PrimaryActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9006EF3E337A9955A60B6929 /* PrimaryActionButton.swift */; };
+		942C6A651E9C1AE00780F68C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A71760983AD438598292C0B /* README.md */; };
+		9887F5A7D01BB6B3319BA2F8 /* MultimodalInferenceEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5538A8377BCB49159A7562 /* MultimodalInferenceEngine.swift */; };
+		A89C9FC96E74489F3A02C055 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AAA4FCB69824B3DA821D4A /* AnalysisView.swift */; };
+		ABCEE96774154AF9F1ADD811 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93DA25E8E82F6D1AFEBBE6C /* ModelManager.swift */; };
+		AC997B5BAB77C88466D57335 /* OutputCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2B39CD85F2ADB8F7FFFE2F /* OutputCard.swift */; };
+		B3925687957AC1994B7C83CD /* Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92341434A4F89DA9FC5B2CB /* Timing.swift */; };
+		B6D33FC112ED930A58944C2C /* NapkinmaticOfflineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E959029FD3EAB8444500D04 /* NapkinmaticOfflineApp.swift */; };
+		D6FF9A556A7A380ED2E8FEC3 /* StderrCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACA0FC09459247D66124D4 /* StderrCapture.swift */; };
+		E9DB15E9CECA6798414E3E20 /* gemma-4-E2B-it.litertlm in Resources */ = {isa = PBXBuildFile; fileRef = 114E7910C9FBCECBB14F4943 /* gemma-4-E2B-it.litertlm */; };
+		EBDDE1FD10D54E1294D22B62 /* ImageAnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF761EE4BD0A4727FAAFA71 /* ImageAnalysisViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCC3EB0172A9FFB24FFF212B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD11DF3C2F096F24C1B5916A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B138DB836177DE665DCD1388;
+			remoteInfo = NapkinmaticOffline;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		114E7910C9FBCECBB14F4943 /* gemma-4-E2B-it.litertlm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gemma-4-E2B-it.litertlm"; sourceTree = "<group>"; };
+		14ACA0FC09459247D66124D4 /* StderrCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StderrCapture.swift; sourceTree = "<group>"; };
+		16AAA4FCB69824B3DA821D4A /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
+		1A71760983AD438598292C0B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2940C03B8D36EB8913674101 /* GemmaMultimodalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemmaMultimodalEngine.swift; sourceTree = "<group>"; };
+		36A584774BBB5E97619283DA /* LiteRTLM */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LiteRTLM; path = Vendor/LiteRTLM; sourceTree = SOURCE_ROOT; };
+		3B2B39CD85F2ADB8F7FFFE2F /* OutputCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputCard.swift; sourceTree = "<group>"; };
+		4F8A96CFBA1F7B9DFFAAF614 /* PromptTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptTemplates.swift; sourceTree = "<group>"; };
+		57DCDAC6B2FE8A00F67CB359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5FF761EE4BD0A4727FAAFA71 /* ImageAnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnalysisViewModel.swift; sourceTree = "<group>"; };
+		6E959029FD3EAB8444500D04 /* NapkinmaticOfflineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapkinmaticOfflineApp.swift; sourceTree = "<group>"; };
+		7017AE0C78010D0FEE2186DE /* LiteRTLMIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiteRTLMIntegrationTests.swift; sourceTree = "<group>"; };
+		7E5CA12BB5A759341E078B21 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		829DE991ACA5457C92D037B8 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		8DE94F41CF6C33356D360CCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9006EF3E337A9955A60B6929 /* PrimaryActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryActionButton.swift; sourceTree = "<group>"; };
+		93E4F22E5C18B902B70D0377 /* PromptChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptChip.swift; sourceTree = "<group>"; };
+		9C073B88DF2DE733E514DFF6 /* Napkinmatic Offline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Napkinmatic Offline.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92341434A4F89DA9FC5B2CB /* Timing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timing.swift; sourceTree = "<group>"; };
+		A9E32725D734C03557182F92 /* ImagePreprocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreprocessor.swift; sourceTree = "<group>"; };
+		AA5538A8377BCB49159A7562 /* MultimodalInferenceEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultimodalInferenceEngine.swift; sourceTree = "<group>"; };
+		C1E361AF619EA6996D060FD6 /* NapkinmaticOfflineTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = NapkinmaticOfflineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C93DA25E8E82F6D1AFEBBE6C /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		D80AA4DBD6E3DCD9B663BDD4 /* CameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69B3C0BC7A7F71947D212CB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BA4CAFD949370A7FDA8749D /* LiteRTLM in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45B9F68D03C0927BCA8F2D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B1D72BDAE317498B23CF9D /* LiteRTLM in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13805736B2B681B62A818277 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A9E32725D734C03557182F92 /* ImagePreprocessor.swift */,
+				14ACA0FC09459247D66124D4 /* StderrCapture.swift */,
+				A92341434A4F89DA9FC5B2CB /* Timing.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1E69774AD35A65F711597135 /* NapkinmaticOfflineTests */ = {
+			isa = PBXGroup;
+			children = (
+				7017AE0C78010D0FEE2186DE /* LiteRTLMIntegrationTests.swift */,
+			);
+			path = NapkinmaticOfflineTests;
+			sourceTree = "<group>";
+		};
+		371F87C68E7E6248D9C81BD1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A964F5729415417A35957024 /* ModelPlaceholder */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4D225DA0E1F2E0C15DF3D45B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				36A584774BBB5E97619283DA /* LiteRTLM */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		5C17F3772F8AE9382669F470 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16AAA4FCB69824B3DA821D4A /* AnalysisView.swift */,
+				7E5CA12BB5A759341E078B21 /* HomeView.swift */,
+				E6A471751260611BCFBCA897 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6DBD9383D14EE12635D22C54 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				2940C03B8D36EB8913674101 /* GemmaMultimodalEngine.swift */,
+				C93DA25E8E82F6D1AFEBBE6C /* ModelManager.swift */,
+				AA5538A8377BCB49159A7562 /* MultimodalInferenceEngine.swift */,
+				4F8A96CFBA1F7B9DFFAAF614 /* PromptTemplates.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		78E322D78C070DE1497B503D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5FF761EE4BD0A4727FAAFA71 /* ImageAnalysisViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		801B5C0482F552A9DB6954BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C073B88DF2DE733E514DFF6 /* Napkinmatic Offline.app */,
+				C1E361AF619EA6996D060FD6 /* NapkinmaticOfflineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FCC291835E17FA1AFDCCAF6 = {
+			isa = PBXGroup;
+			children = (
+				BC5BBC5A15DF20C72430C236 /* NapkinmaticOffline */,
+				1E69774AD35A65F711597135 /* NapkinmaticOfflineTests */,
+				4D225DA0E1F2E0C15DF3D45B /* Packages */,
+				801B5C0482F552A9DB6954BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A964F5729415417A35957024 /* ModelPlaceholder */ = {
+			isa = PBXGroup;
+			children = (
+				114E7910C9FBCECBB14F4943 /* gemma-4-E2B-it.litertlm */,
+				1A71760983AD438598292C0B /* README.md */,
+			);
+			path = ModelPlaceholder;
+			sourceTree = "<group>";
+		};
+		B936EA785314E53A2D6F3B82 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				829DE991ACA5457C92D037B8 /* AppRootView.swift */,
+				57DCDAC6B2FE8A00F67CB359 /* Info.plist */,
+				6E959029FD3EAB8444500D04 /* NapkinmaticOfflineApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BC5BBC5A15DF20C72430C236 /* NapkinmaticOffline */ = {
+			isa = PBXGroup;
+			children = (
+				8DE94F41CF6C33356D360CCB /* Assets.xcassets */,
+				6DBD9383D14EE12635D22C54 /* AI */,
+				B936EA785314E53A2D6F3B82 /* App */,
+				371F87C68E7E6248D9C81BD1 /* Resources */,
+				13805736B2B681B62A818277 /* Utilities */,
+				78E322D78C070DE1497B503D /* ViewModels */,
+				5C17F3772F8AE9382669F470 /* Views */,
+			);
+			path = NapkinmaticOffline;
+			sourceTree = "<group>";
+		};
+		E6A471751260611BCFBCA897 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D80AA4DBD6E3DCD9B663BDD4 /* CameraCaptureView.swift */,
+				3B2B39CD85F2ADB8F7FFFE2F /* OutputCard.swift */,
+				9006EF3E337A9955A60B6929 /* PrimaryActionButton.swift */,
+				93E4F22E5C18B902B70D0377 /* PromptChip.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4407177A271F8DD560438587 /* NapkinmaticOfflineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8A4370FE06911E368962054 /* Build configuration list for PBXNativeTarget "NapkinmaticOfflineTests" */;
+			buildPhases = (
+				A60834C960D191C467E45F80 /* Sources */,
+				69B3C0BC7A7F71947D212CB3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E98CEE2C067F2788A7F08ED /* PBXTargetDependency */,
+			);
+			name = NapkinmaticOfflineTests;
+			packageProductDependencies = (
+				AB015AF5F5B08C4EDA547CBF /* LiteRTLM */,
+			);
+			productName = NapkinmaticOfflineTests;
+			productReference = C1E361AF619EA6996D060FD6 /* NapkinmaticOfflineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B138DB836177DE665DCD1388 /* NapkinmaticOffline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D055482BE788B15310BEE1EF /* Build configuration list for PBXNativeTarget "NapkinmaticOffline" */;
+			buildPhases = (
+				A2E62A77B02B79212AFE0761 /* Sources */,
+				3D77C192686E2C3FE375DFEB /* Resources */,
+				B45B9F68D03C0927BCA8F2D0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NapkinmaticOffline;
+			packageProductDependencies = (
+				C9EC8614E357EC0720171719 /* LiteRTLM */,
+			);
+			productName = NapkinmaticOffline;
+			productReference = 9C073B88DF2DE733E514DFF6 /* Napkinmatic Offline.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD11DF3C2F096F24C1B5916A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4407177A271F8DD560438587 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					B138DB836177DE665DCD1388 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 52C1739121A14C2C5E94A1DE /* Build configuration list for PBXProject "NapkinmaticOffline" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9FCC291835E17FA1AFDCCAF6;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				861DD268BC5E0CD138934A5E /* XCLocalSwiftPackageReference "Vendor/LiteRTLM" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 801B5C0482F552A9DB6954BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B138DB836177DE665DCD1388 /* NapkinmaticOffline */,
+				4407177A271F8DD560438587 /* NapkinmaticOfflineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D77C192686E2C3FE375DFEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F56FE271FE722781C37470 /* Assets.xcassets in Resources */,
+				942C6A651E9C1AE00780F68C /* README.md in Resources */,
+				E9DB15E9CECA6798414E3E20 /* gemma-4-E2B-it.litertlm in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2E62A77B02B79212AFE0761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A89C9FC96E74489F3A02C055 /* AnalysisView.swift in Sources */,
+				017FF952A8FE58153A8C176B /* AppRootView.swift in Sources */,
+				7AE89B0B550E6668C0524437 /* CameraCaptureView.swift in Sources */,
+				5A088AFCCE980E09C1CF8035 /* GemmaMultimodalEngine.swift in Sources */,
+				0E8D32F4E620DA143E3A2E47 /* HomeView.swift in Sources */,
+				EBDDE1FD10D54E1294D22B62 /* ImageAnalysisViewModel.swift in Sources */,
+				28429E4895F1968F6DC499F0 /* ImagePreprocessor.swift in Sources */,
+				ABCEE96774154AF9F1ADD811 /* ModelManager.swift in Sources */,
+				9887F5A7D01BB6B3319BA2F8 /* MultimodalInferenceEngine.swift in Sources */,
+				B6D33FC112ED930A58944C2C /* NapkinmaticOfflineApp.swift in Sources */,
+				AC997B5BAB77C88466D57335 /* OutputCard.swift in Sources */,
+				8C9F99ABA83F2F999A47FF82 /* PrimaryActionButton.swift in Sources */,
+				50AA9F4D8D5CCDC0DB4C7914 /* PromptChip.swift in Sources */,
+				5C8E981923991E177FEDDD69 /* PromptTemplates.swift in Sources */,
+				D6FF9A556A7A380ED2E8FEC3 /* StderrCapture.swift in Sources */,
+				B3925687957AC1994B7C83CD /* Timing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60834C960D191C467E45F80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A942277A383155559ED933 /* LiteRTLMIntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E98CEE2C067F2788A7F08ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B138DB836177DE665DCD1388 /* NapkinmaticOffline */;
+			targetProxy = FCC3EB0172A9FFB24FFF212B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C699AB46C5F034B15542BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.napkinmatic.offline.tests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Napkinmatic Offline.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Napkinmatic Offline";
+			};
+			name = Debug;
+		};
+		2DE841877A71D169DA74F1A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		4B7DBCF7670228916B286076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = BX8B2LYR5T;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = NapkinmaticOffline/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.napkinmatic.offline;
+				PRODUCT_NAME = "Napkinmatic Offline";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B7167037E853630B255A9DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		BE216CCA2F1AAE2198EDA82A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = BX8B2LYR5T;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = NapkinmaticOffline/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.napkinmatic.offline;
+				PRODUCT_NAME = "Napkinmatic Offline";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CF3669CD52E7549200AAC301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.napkinmatic.offline.tests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Napkinmatic Offline.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Napkinmatic Offline";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52C1739121A14C2C5E94A1DE /* Build configuration list for PBXProject "NapkinmaticOffline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE841877A71D169DA74F1A1 /* Debug */,
+				B7167037E853630B255A9DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D055482BE788B15310BEE1EF /* Build configuration list for PBXNativeTarget "NapkinmaticOffline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B7DBCF7670228916B286076 /* Debug */,
+				BE216CCA2F1AAE2198EDA82A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E8A4370FE06911E368962054 /* Build configuration list for PBXNativeTarget "NapkinmaticOfflineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C699AB46C5F034B15542BBE /* Debug */,
+				CF3669CD52E7549200AAC301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		861DD268BC5E0CD138934A5E /* XCLocalSwiftPackageReference "Vendor/LiteRTLM" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/LiteRTLM;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB015AF5F5B08C4EDA547CBF /* LiteRTLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LiteRTLM;
+		};
+		C9EC8614E357EC0720171719 /* LiteRTLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LiteRTLM;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BD11DF3C2F096F24C1B5916A /* Project object */;
+}

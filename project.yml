@@ -1,0 +1,70 @@
+name: NapkinmaticOffline
+options:
+  bundleIdPrefix: com.napkinmatic
+  createIntermediateGroups: true
+packages:
+  LiteRTLM:
+    path: Vendor/LiteRTLM
+settings:
+  base:
+    SWIFT_VERSION: 5.9
+    IPHONEOS_DEPLOYMENT_TARGET: 17.0
+schemes:
+  NapkinmaticOffline:
+    build:
+      targets:
+        NapkinmaticOffline: all
+        NapkinmaticOfflineTests: [test]
+    test:
+      targets:
+        - NapkinmaticOfflineTests
+targets:
+  NapkinmaticOffline:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: NapkinmaticOffline
+        excludes:
+          - Resources
+          - Assets.xcassets
+      - path: NapkinmaticOffline/Assets.xcassets
+        buildPhase: resources
+      - path: NapkinmaticOffline/Resources
+        buildPhase: resources
+    dependencies:
+      - package: LiteRTLM
+        product: LiteRTLM
+    info:
+      path: NapkinmaticOffline/App/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.napkinmatic.offline
+        PRODUCT_NAME: Napkinmatic Offline
+        MARKETING_VERSION: 0.1.0
+        CURRENT_PROJECT_VERSION: 1
+        TARGETED_DEVICE_FAMILY: 1
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ""
+        PROVISIONING_PROFILE_SPECIFIER: ""
+        DEVELOPMENT_ASSET_PATHS: ""
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
+  NapkinmaticOfflineTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: NapkinmaticOfflineTests
+    dependencies:
+      - target: NapkinmaticOffline
+      - package: LiteRTLM
+        product: LiteRTLM
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.napkinmatic.offline.tests
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ""
+        PROVISIONING_PROFILE_SPECIFIER: ""
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Napkinmatic Offline.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Napkinmatic Offline"
+        BUNDLE_LOADER: "$(TEST_HOST)"

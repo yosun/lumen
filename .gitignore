@@ -1,0 +1,6 @@
+DerivedData/
+.swiftpm/
+*.xcuserdata/
+*.xcuserstate
+*.litertlm
+.DS_Store
