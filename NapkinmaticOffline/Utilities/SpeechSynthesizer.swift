@@ -71,13 +71,24 @@ final class SpeechSynthesizer: NSObject, ObservableObject {
     }
 
     private func bestVoice(for language: OutputLanguage) -> AVSpeechSynthesisVoice? {
-        // Prefer an enhanced/premium voice if installed, otherwise default.
+        Self.bestVoice(from: AVSpeechSynthesisVoice.speechVoices(), for: language)
+    }
+
+    /// Pure voice-selection helper exposed for testing. Picks the best
+    /// available voice from `voices` whose `language` prefix-matches
+    /// `language.bcp47` (case-insensitive), preferring `.premium`, then
+    /// `.enhanced`, then any matching voice. Falls back to
+    /// `AVSpeechSynthesisVoice(language:)` when no installed voice matches.
+    static func bestVoice(
+        from voices: [AVSpeechSynthesisVoice],
+        for language: OutputLanguage
+    ) -> AVSpeechSynthesisVoice? {
         let bcp47 = language.bcp47
-        let candidates = AVSpeechSynthesisVoice.speechVoices().filter { voice in
+        let candidates = voices.filter { voice in
             voice.language.lowercased().hasPrefix(bcp47.lowercased())
         }
-        if let enhanced = candidates.first(where: { $0.quality == .premium }) {
-            return enhanced
+        if let premium = candidates.first(where: { $0.quality == .premium }) {
+            return premium
         }
         if let enhanced = candidates.first(where: { $0.quality == .enhanced }) {
             return enhanced

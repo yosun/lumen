@@ -2,8 +2,6 @@ import Foundation
 
 /// Assembles a fully-formed system prompt and user message for a given
 /// (subject, style, language, custom question) tuple.
-///
-/// Replaces the old static `PromptTemplates` struct.
 enum PromptComposer {
     /// The fixed Lumen identity preamble that prefixes every system prompt.
     private static let identity: String = """

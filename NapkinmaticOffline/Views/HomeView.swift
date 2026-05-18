@@ -2,10 +2,18 @@ import PhotosUI
 import SwiftUI
 import UIKit
 
-private struct PendingCapture: Identifiable {
+private struct PendingCapture: Identifiable, Hashable {
     let id = UUID()
     let image: UIImage
     let subject: SubjectMode
+
+    static func == (lhs: PendingCapture, rhs: PendingCapture) -> Bool {
+        lhs.id == rhs.id
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }
 
 private struct HomeAlert: Identifiable {

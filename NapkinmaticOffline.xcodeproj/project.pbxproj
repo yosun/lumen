@@ -15,7 +15,6 @@
 		35A942277A383155559ED933 /* LiteRTLMIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7017AE0C78010D0FEE2186DE /* LiteRTLMIntegrationTests.swift */; };
 		50AA9F4D8D5CCDC0DB4C7914 /* PromptChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E4F22E5C18B902B70D0377 /* PromptChip.swift */; };
 		5A088AFCCE980E09C1CF8035 /* GemmaMultimodalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2940C03B8D36EB8913674101 /* GemmaMultimodalEngine.swift */; };
-		5C8E981923991E177FEDDD69 /* PromptTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8A96CFBA1F7B9DFFAAF614 /* PromptTemplates.swift */; };
 		7AE89B0B550E6668C0524437 /* CameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80AA4DBD6E3DCD9B663BDD4 /* CameraCaptureView.swift */; };
 		87F56FE271FE722781C37470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE94F41CF6C33356D360CCB /* Assets.xcassets */; };
 		8C9F99ABA83F2F999A47FF82 /* PrimaryActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9006EF3E337A9955A60B6929 /* PrimaryActionButton.swift */; };
@@ -29,6 +28,12 @@
 		D6FF9A556A7A380ED2E8FEC3 /* StderrCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACA0FC09459247D66124D4 /* StderrCapture.swift */; };
 		E9DB15E9CECA6798414E3E20 /* gemma-4-E2B-it.litertlm in Resources */ = {isa = PBXBuildFile; fileRef = 114E7910C9FBCECBB14F4943 /* gemma-4-E2B-it.litertlm */; };
 		EBDDE1FD10D54E1294D22B62 /* ImageAnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF761EE4BD0A4727FAAFA71 /* ImageAnalysisViewModel.swift */; };
+		0F1E2D3C4B5A69788796A5B4 /* SubjectMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B5C /* SubjectMode.swift */; };
+		1F2E3D4C5B6A79889796A5B5 /* AnswerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B3C4D5E6F70819293A4B5D /* AnswerStyle.swift */; };
+		2F3E4D5C6B7A89889796A5B6 /* OutputLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C5D6E7F80819293A4B5E /* OutputLanguage.swift */; };
+		3F4E5D6C7B8A98889796A5B7 /* PromptComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B5C6D7E8F90819293A4B5F /* PromptComposer.swift */; };
+		4F5E6D7C8B9AA8889796A5B8 /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B6C7D8E9FA0819293A4B60 /* SpeechSynthesizer.swift */; };
+		5F6E7D8C9BAAB8889796A5B9 /* LumenBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B7C8D9EAFB0819293A4B61 /* LumenBrand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +54,6 @@
 		2940C03B8D36EB8913674101 /* GemmaMultimodalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemmaMultimodalEngine.swift; sourceTree = "<group>"; };
 		36A584774BBB5E97619283DA /* LiteRTLM */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LiteRTLM; path = Vendor/LiteRTLM; sourceTree = SOURCE_ROOT; };
 		3B2B39CD85F2ADB8F7FFFE2F /* OutputCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputCard.swift; sourceTree = "<group>"; };
-		4F8A96CFBA1F7B9DFFAAF614 /* PromptTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptTemplates.swift; sourceTree = "<group>"; };
 		57DCDAC6B2FE8A00F67CB359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5FF761EE4BD0A4727FAAFA71 /* ImageAnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnalysisViewModel.swift; sourceTree = "<group>"; };
 		6E959029FD3EAB8444500D04 /* NapkinmaticOfflineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapkinmaticOfflineApp.swift; sourceTree = "<group>"; };
@@ -66,6 +70,12 @@
 		C1E361AF619EA6996D060FD6 /* NapkinmaticOfflineTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = NapkinmaticOfflineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93DA25E8E82F6D1AFEBBE6C /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		D80AA4DBD6E3DCD9B663BDD4 /* CameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B5C /* SubjectMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectMode.swift; sourceTree = "<group>"; };
+		A2B3C4D5E6F70819293A4B5D /* AnswerStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerStyle.swift; sourceTree = "<group>"; };
+		A3B4C5D6E7F80819293A4B5E /* OutputLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputLanguage.swift; sourceTree = "<group>"; };
+		A4B5C6D7E8F90819293A4B5F /* PromptComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptComposer.swift; sourceTree = "<group>"; };
+		A5B6C7D8E9FA0819293A4B60 /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizer.swift; sourceTree = "<group>"; };
+		A6B7C8D9EAFB0819293A4B61 /* LumenBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LumenBrand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				A9E32725D734C03557182F92 /* ImagePreprocessor.swift */,
+				A5B6C7D8E9FA0819293A4B60 /* SpeechSynthesizer.swift */,
 				14ACA0FC09459247D66124D4 /* StderrCapture.swift */,
 				A92341434A4F89DA9FC5B2CB /* Timing.swift */,
 			);
@@ -135,10 +146,13 @@
 		6DBD9383D14EE12635D22C54 /* AI */ = {
 			isa = PBXGroup;
 			children = (
+				A2B3C4D5E6F70819293A4B5D /* AnswerStyle.swift */,
 				2940C03B8D36EB8913674101 /* GemmaMultimodalEngine.swift */,
 				C93DA25E8E82F6D1AFEBBE6C /* ModelManager.swift */,
 				AA5538A8377BCB49159A7562 /* MultimodalInferenceEngine.swift */,
-				4F8A96CFBA1F7B9DFFAAF614 /* PromptTemplates.swift */,
+				A3B4C5D6E7F80819293A4B5E /* OutputLanguage.swift */,
+				A4B5C6D7E8F90819293A4B5F /* PromptComposer.swift */,
+				A1B2C3D4E5F60718293A4B5C /* SubjectMode.swift */,
 			);
 			path = AI;
 			sourceTree = "<group>";
@@ -184,6 +198,7 @@
 			children = (
 				829DE991ACA5457C92D037B8 /* AppRootView.swift */,
 				57DCDAC6B2FE8A00F67CB359 /* Info.plist */,
+				A6B7C8D9EAFB0819293A4B61 /* LumenBrand.swift */,
 				6E959029FD3EAB8444500D04 /* NapkinmaticOfflineApp.swift */,
 			);
 			path = App;
@@ -317,20 +332,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				A89C9FC96E74489F3A02C055 /* AnalysisView.swift in Sources */,
+				1F2E3D4C5B6A79889796A5B5 /* AnswerStyle.swift in Sources */,
 				017FF952A8FE58153A8C176B /* AppRootView.swift in Sources */,
 				7AE89B0B550E6668C0524437 /* CameraCaptureView.swift in Sources */,
 				5A088AFCCE980E09C1CF8035 /* GemmaMultimodalEngine.swift in Sources */,
 				0E8D32F4E620DA143E3A2E47 /* HomeView.swift in Sources */,
 				EBDDE1FD10D54E1294D22B62 /* ImageAnalysisViewModel.swift in Sources */,
 				28429E4895F1968F6DC499F0 /* ImagePreprocessor.swift in Sources */,
+				5F6E7D8C9BAAB8889796A5B9 /* LumenBrand.swift in Sources */,
 				ABCEE96774154AF9F1ADD811 /* ModelManager.swift in Sources */,
 				9887F5A7D01BB6B3319BA2F8 /* MultimodalInferenceEngine.swift in Sources */,
 				B6D33FC112ED930A58944C2C /* NapkinmaticOfflineApp.swift in Sources */,
 				AC997B5BAB77C88466D57335 /* OutputCard.swift in Sources */,
+				2F3E4D5C6B7A89889796A5B6 /* OutputLanguage.swift in Sources */,
 				8C9F99ABA83F2F999A47FF82 /* PrimaryActionButton.swift in Sources */,
 				50AA9F4D8D5CCDC0DB4C7914 /* PromptChip.swift in Sources */,
-				5C8E981923991E177FEDDD69 /* PromptTemplates.swift in Sources */,
+				3F4E5D6C7B8A98889796A5B7 /* PromptComposer.swift in Sources */,
+				4F5E6D7C8B9AA8889796A5B8 /* SpeechSynthesizer.swift in Sources */,
 				D6FF9A556A7A380ED2E8FEC3 /* StderrCapture.swift in Sources */,
+				0F1E2D3C4B5A69788796A5B4 /* SubjectMode.swift in Sources */,
 				B3925687957AC1994B7C83CD /* Timing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
